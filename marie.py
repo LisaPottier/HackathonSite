@@ -2,6 +2,7 @@
 
 from shapely.geometry import MultiPolygon, Polygon, box, MultiPoint, Point
 from shapely import wkt
+from create_csv import create_csv
 
 def get_geometries(top_left, bottom_right, spacing=0.08):
     polygons = []
@@ -53,4 +54,4 @@ point_grid = MultiPoint(intersecting_points)
 
 #grids are shapely geometries. You can output them as WKT format
 print(point_grid.wkt)
-print(polygon_grid.wkt)
+create_csv(point_grid,"marie.csv")
