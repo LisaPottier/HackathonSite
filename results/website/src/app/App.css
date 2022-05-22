@@ -1,0 +1,15 @@
+/*--------- HEADER ---------*/
+.App-header {
+  background-color: var(--element-color);
+  color: var(--main-text-color);
+  width: 100%;
+  height: var(--header-height);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.App-header__title {
+  font-size: 1.25em;
+}
